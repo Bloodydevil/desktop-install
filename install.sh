@@ -42,6 +42,10 @@ function install_essentials() {
   echo_bold "install musicplayer"
   apt-get install -q -y gmusicbrowser
 
+  echo_bold "install nuvolaplayer"
+  sudo add-apt-repository -y ppa:nuvola-player-builders/stable
+  sudo apt-get update && sudo apt-get install nuvolaplayer
+
   echo_bold "install desktop recording tool"
   apt-get install -q -y gtk-recordmydesktop
 
